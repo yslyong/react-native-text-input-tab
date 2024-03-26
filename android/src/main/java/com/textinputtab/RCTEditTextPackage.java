@@ -6,10 +6,11 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 
 import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class TextInputTabPackage implements ReactPackage {
+public class RCTEditTextPackage implements ReactPackage {
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
     return Collections.emptyList();
@@ -17,6 +18,11 @@ public class TextInputTabPackage implements ReactPackage {
 
   @Override
   public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
-    return Arrays.<ViewManager>asList(new TextInputTabViewManager());
+    List<ViewManager> viewManagers = new ArrayList<>();
+
+    viewManagers.add(new RCTEditTextManager());
+
+    return viewManagers;
+
   }
 }
