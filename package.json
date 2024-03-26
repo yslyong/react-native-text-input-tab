@@ -1,6 +1,6 @@
 {
   "name": "react-native-text-input-tab",
-  "version": "0.2.0",
+  "version": "0.0.0",
   "description": "Fix React Native Text unable to use keyboard tab to next input",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
