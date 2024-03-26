@@ -10,13 +10,7 @@ npm install react-native-text-input-tab
 
 ## Usage
 
-```js
-import { TextInputTabView } from "react-native-text-input-tab";
-
-// ...
-
-<TextInputTabView color="tomato" />
-```
+This package is just to make this fix to be installable without modifying the android folder in the project. All the code are referred from https://github.com/ArturKalach/react-native-a11y/blob/master/docs/AndroidInput.md
 
 ## Contributing
 
